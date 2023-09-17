@@ -375,8 +375,8 @@ shape = SubResource("RectangleShape2D_fjpx0")
 
 [node name="PlayerSpawnPoints" type="Node2D" parent="."]
 
-[node name="0" type="Node2D" parent="PlayerSpawnPoints" groups=["PlayerSpawnPoints"]]
+[node name="1" type="Node2D" parent="PlayerSpawnPoints" groups=["PlayerSpawnPoints"]]
 position = Vector2(207, 472)
 
-[node name="1" type="Node2D" parent="PlayerSpawnPoints" groups=["PlayerSpawnPoints"]]
+[node name="2" type="Node2D" parent="PlayerSpawnPoints" groups=["PlayerSpawnPoints"]]
 position = Vector2(919, 477)

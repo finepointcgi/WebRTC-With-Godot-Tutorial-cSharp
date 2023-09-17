@@ -1,0 +1,61 @@
+[gd_scene load_steps=3 format=3 uid="uid://byglx76vlw56k"]
+
+[ext_resource type="Script" path="res://Client.cs" id="1_qxt85"]
+[ext_resource type="Script" path="res://Server.cs" id="2_10t33"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Client" type="Node" parent="."]
+script = ExtResource("1_qxt85")
+
+[node name="LineEdit" type="LineEdit" parent="Client"]
+offset_left = 201.0
+offset_top = 118.0
+offset_right = 633.0
+offset_bottom = 149.0
+
+[node name="Server" type="Node" parent="."]
+script = ExtResource("2_10t33")
+
+[node name="ServerHost" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1070.0
+offset_top = 24.0
+offset_right = 1114.0
+offset_bottom = 55.0
+text = "Host"
+
+[node name="ClientJoin" type="Button" parent="."]
+layout_mode = 0
+offset_left = 43.0
+offset_top = 24.0
+offset_right = 87.0
+offset_bottom = 55.0
+text = "Join"
+
+[node name="ClientSendTestData" type="Button" parent="."]
+layout_mode = 0
+offset_left = 46.0
+offset_top = 116.0
+offset_right = 90.0
+offset_bottom = 147.0
+text = "Join Lobby"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 44.0
+offset_top = 182.0
+offset_right = 262.0
+offset_bottom = 232.0
+text = "ping webrtc users"
+
+[connection signal="button_down" from="ServerHost" to="Server" method="_on_server_host_button_down"]
+[connection signal="button_down" from="ClientJoin" to="Client" method="_on_client_join_button_down"]
+[connection signal="button_down" from="ClientSendTestData" to="Client" method="_on_client_send_test_data_button_down"]
+[connection signal="button_down" from="Button" to="Client" method="_on_button_button_down"]

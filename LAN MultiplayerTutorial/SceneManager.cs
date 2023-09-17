@@ -10,7 +10,7 @@ public partial class SceneManager : Node2D
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
-		int index = 0;
+		int index = 1;
 		foreach (var item in GameManager.Players)
 		{
 			Player currentPlayer = playerScene.Instantiate<Player>();
@@ -19,7 +19,7 @@ public partial class SceneManager : Node2D
 			AddChild(currentPlayer);
 			foreach (Node2D spawnPoint in GetTree().GetNodesInGroup("PlayerSpawnPoints"))
 			{
-				if(int.Parse(spawnPoint.Name) == index){
+				if(int.Parse(spawnPoint.Name) == item.Index){
 					currentPlayer.GlobalPosition = spawnPoint.GlobalPosition;
 				}
 			}

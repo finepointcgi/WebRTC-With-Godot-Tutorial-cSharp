@@ -15,6 +15,10 @@ run/main_scene="res://LAN MultiplayerTutorial/multiplayer_controller.tscn"
 config/features=PackedStringArray("4.1", "C#", "Forward Plus")
 config/icon="res://LAN MultiplayerTutorial/icon.svg"
 
+[autoload]
+
+GameManager="*res://LAN MultiplayerTutorial/GameManager.cs"
+
 [dotnet]
 
 project/assembly_name="Multiplayer Lan Tutorial CSharp"

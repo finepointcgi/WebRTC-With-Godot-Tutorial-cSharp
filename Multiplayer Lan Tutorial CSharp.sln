@@ -1,6 +1,6 @@
 ﻿Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multiplayer Lan Tutorial CSharp", "Multiplayer Lan Tutorial CSharp.csproj", "{A3B8A2B1-6B7A-450E-B02A-FCB01D4243BE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multiplayer Lan Tutorial CSharp", "Multiplayer Lan Tutorial CSharp.csproj", "{D53892AD-E114-4452-ABF2-6BCA12FE8867}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,11 +9,11 @@ Global
 	ExportRelease|Any CPU = ExportRelease|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A3B8A2B1-6B7A-450E-B02A-FCB01D4243BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A3B8A2B1-6B7A-450E-B02A-FCB01D4243BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A3B8A2B1-6B7A-450E-B02A-FCB01D4243BE}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
-		{A3B8A2B1-6B7A-450E-B02A-FCB01D4243BE}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
-		{A3B8A2B1-6B7A-450E-B02A-FCB01D4243BE}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
-		{A3B8A2B1-6B7A-450E-B02A-FCB01D4243BE}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+		{D53892AD-E114-4452-ABF2-6BCA12FE8867}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D53892AD-E114-4452-ABF2-6BCA12FE8867}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D53892AD-E114-4452-ABF2-6BCA12FE8867}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{D53892AD-E114-4452-ABF2-6BCA12FE8867}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{D53892AD-E114-4452-ABF2-6BCA12FE8867}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{D53892AD-E114-4452-ABF2-6BCA12FE8867}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
 	EndGlobalSection
 EndGlobal
