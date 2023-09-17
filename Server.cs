@@ -2,6 +2,7 @@ using Godot;
 using System;
 using System.Collections.Generic;
 using Newtonsoft.Json;
+using System.Linq;
 
 
 public partial class Server : Node
@@ -14,6 +15,10 @@ public partial class Server : Node
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
+		if(OS.GetCmdlineArgs().Contains("--server")){
+			peer.CreateServer(hostPort);
+			GD.Print("Started Server on " + hostPort.ToString());
+		}
 		peer.PeerConnected += peerConnected;
 		peer.PeerDisconnected += peerDisconnected;
 	}
@@ -98,7 +103,7 @@ public partial class Server : Node
 			};
 			sendToPeer(data.Id, playerIDData);
 
-			sendToPeer(data.Id, new LobbyData()
+			sendToPeer(player.Id, new LobbyData()
 			{
 				Lobby = lobbies[data.LobbyValue],
 				Type = MessageType.Lobby

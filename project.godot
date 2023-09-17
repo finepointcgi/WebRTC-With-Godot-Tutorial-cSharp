@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Multiplayer Lan Tutorial CSharp"
-run/main_scene="res://LAN MultiplayerTutorial/multiplayer_controller.tscn"
+run/main_scene="res://Test Scene.tscn"
 config/features=PackedStringArray("4.1", "C#", "Forward Plus")
 config/icon="res://LAN MultiplayerTutorial/icon.svg"
 

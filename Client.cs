@@ -8,7 +8,7 @@ public partial class Client : Node
 	WebSocketMultiplayerPeer peer = new();
 	WebRtcMultiplayerPeer rtcPeer = new();
 	[Export]
-	public string ServerURL = "ws://127.0.0.1:8916";
+	public string ServerURL = "ws://204.48.28.159:8916";
 	private Lobby lobby;
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
@@ -201,5 +201,6 @@ public partial class Client : Node
 		
 		Node2D scene = ResourceLoader.Load<PackedScene>("res://LAN MultiplayerTutorial/TestScene.tscn").Instantiate<Node2D>();
 		GetTree().Root.AddChild(scene);
+		GetParent().QueueFree();
 	}
 }
